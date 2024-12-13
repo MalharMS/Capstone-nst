@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Source Serif 4';
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+/* Main content styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero section */
+.hero {
+    margin-bottom: 4rem;
+}
+
+.hero-title {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.hero-title h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.portfolio-item {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Statement section */
+.statement {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.statement-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.statement-text {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Services section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.services-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Metrics section */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.metric-item {
+    text-align: center;
+}
+
+.metric-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+
+:root {
+    --border-radius: 16px;
+    --spacing-lg: 24px;
+    --spacing-md: 16px;
+    --color-background: #000000;
+    --color-text: #ffffff;
+    --color-text-secondary: rgba(255, 255, 255, 0.7);
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: var(--spacing-lg);
+}
+
+/* Portfolio grid layout */
+#portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+}
+
+/* Project card styles */
+.project-card {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: #111;
+    transition: transform var(--transition-speed);
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-image-wrapper {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.project-info {
+    padding: var(--spacing-md);
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.project-category {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+/* Individual project card customizations */
+#project-alpha .project-image-wrapper {
+    background: linear-gradient(45deg, #2C3E50, #3498DB);
+}
+
+#project-beta .project-image-wrapper {
+    background: linear-gradient(45deg, #8E44AD, #9B59B6);
+}
+
+#project-gamma .project-image-wrapper {
+    background: linear-gradient(45deg, #2ECC71, #27AE60);
+}
+
+#project-delta .project-image-wrapper {
+    background: linear-gradient(45deg, #E74C3C, #C0392B);
+}
+
+#project-epsilon .project-image-wrapper {
+    background: linear-gradient(45deg, #F39C12, #D35400);
+}
+
+#project-zeta .project-image-wrapper {
+    background: linear-gradient(45deg, #1ABC9C, #16A085);
+}
+
+#project-eta .project-image-wrapper {
+    background: linear-gradient(45deg, #34495E, #2C3E50);
+}
+
+#project-theta .project-image-wrapper {
+    background: linear-gradient(45deg, #95A5A6, #7F8C8D);
+}
+
+#project-iota .project-image-wrapper {
+    background: linear-gradient(45deg, #E67E22, #D35400);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: var(--spacing-md);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Showcase grid */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.showcase-item {
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Trusted by section */
+.trusted-by {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trusted-by-title {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.trusted-by-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    opacity: 0.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-grid,
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services,
+    .metrics {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .trusted-by-logos {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+
+
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    max-width: 900px;
+    margin: 0 auto 4rem;
+}
+
+/* Content box styles */
+.content-box {
+    padding: 2rem;
+    margin: 2rem 0 4rem;
+    position: relative;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.content-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Portfolio grid styles */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.portfolio-item {
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    body {
+        padding: 1rem;
+    }
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Services grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.service-item {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Metrics grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.metric-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.metric-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .services-grid,
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        font-size: 1.25rem;
+    }
+
+    .metric-number {
+        font-size: 2.5rem;
+    }
+
+    .metric-label {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+        /* Gallery Container */
+        #gallery-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: var(--gallery-gap);
+        }
+
+        /* Gallery Items */
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: transform var(--transition-duration);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        /* Specific Item Layouts */
+        #design-workspace {
+            grid-column: 1;
+            grid-row: 1;
+            aspect-ratio: 1;
+        }
+
+        #minimal-office {
+            grid-column: 2;
+            grid-row: 1;
+            aspect-ratio: 1;
+        }
+
+        #modern-workspace {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+            aspect-ratio: 21/9;
+        }
+
+        #geometric-design {
+            grid-column: 1;
+            grid-row: 3;
+            aspect-ratio: 1;
+        }
+
+        #interior-concept {
+            grid-column: 2;
+            grid-row: 3;
+            aspect-ratio: 1;
+        }
+
+        /* Image Styling */
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-duration);
+        }
+
+        /* Image Container */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Overlay Effects */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--overlay-color);
+            opacity: 0;
+            transition: opacity var(--transition-duration);
+            display: flex;
+            align-items: flex-end;
+            padding: 2rem;
+            color: white;
+        }
+
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            transform: translateY(20px);
+            transition: transform var(--transition-duration);
+        }
+
+        .gallery-item:hover .overlay-content {
+            transform: translateY(0);
+        }
+
+        .overlay-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .overlay-description {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #design-workspace,
+            #minimal-office,
+            #modern-workspace,
+            #geometric-design,
+            #interior-concept {
+                grid-column: 1;
+                aspect-ratio: 3/4;
+            }
+
+            #modern-workspace {
+                aspect-ratio: 3/4;
+            }
+        }
+
+
+.random-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:auto;
+    /* width: 100vw; */
+}
+
+.ran1{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+    margin: 30px;
+    
+}
+
+.ran1 img{
+    height: 10%;
+    width: 100%;
+}
+.ran2{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row;
+    gap: 10px;
+    margin: 30px;
+    width: 100%;
+}
+
+.ran2 > img{
+    height: 300px;
+    width: 100%;
+}
+.ran3{
+    display: flex;
+    /* justify-content: center; */
+    align-items: start;
+    flex-direction: row;
+    gap: 10px;
+    margin: 30px;
+
+ 
+}
+
+.ran3 img{
+    height: 60%;
+    width: 100%;
+}
