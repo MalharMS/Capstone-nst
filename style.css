@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Chivo:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Chivo", serif;
+
 
 }
 
@@ -32,12 +32,14 @@ body {
     background-color: #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #ffffff5a;
-   
 }
 .logo{
     font-size: 24px;
     font-weight: bold;
     margin-left: 32px;
+    font-family: "MuseoModerno", serif;
+
+
 }
 .links{
     display: flex;
@@ -61,7 +63,7 @@ a:hover{
 }
 
 .main-title{
-    font-size: 3.9rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-top: 32px;
     margin-bottom: 32px;
@@ -136,7 +138,6 @@ a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
-    
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
@@ -162,7 +163,6 @@ a:hover{
     gap: 30px;
     width: 100vw;
 }
-.img-card{}
 
 .img-card img{
     width: 22rem;
@@ -225,9 +225,11 @@ a:hover{
 }
 
 .cs1 li{
+    font-size: 20px;
+    font-weight: 100;
     list-style: none;
     margin: 0 30px;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .content-text1{
@@ -248,9 +250,6 @@ a:hover{
     margin-top: 14rem ;
 }
 
-.set1{
-    display: flex;
-}
 .set1{
     display: flex;
     justify-content: space-around;
@@ -281,6 +280,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 3rem;
     opacity: 0.6;
 }
@@ -317,6 +317,173 @@ a:hover{
     margin: 0;
     padding: 15px 25px;
     text-align: center;
+}
 
- 
-  }
+
+@media (max-width: 419px) {
+
+    .links a{
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .main-img img{
+        height: auto;
+        border-radius: 10px;
+        width: 350px;
+    }
+    .main-title{
+        font-size: 1rem;
+    }
+    .hero-title3{
+        font-size: 0.4rem;
+    }
+    .img-card img{
+        width: 17rem;
+    }
+
+    .card img{
+        width: 200px;
+        border-radius: 15px;
+    }
+
+    .card h4{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .card p{
+        font-size: 10px;
+        font-weight: 400;
+        color: grey;
+    }
+    .content-items img{
+        width: 120px;
+        height: 170px;
+        margin: 10px;
+    }
+    .content-text{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .set1 img{
+        width: 200px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .cs1 li{
+        font-size: 14px;
+    }
+    .wio{
+        font-size: 0.7rem;
+    }
+    .cs2 p{
+        font-size: 10px;
+    }
+    .trusted-by-logos img{
+        width: 80px;
+    }
+    .footer h1{
+        font-size: 12px;
+    }
+    .button-2{
+        width: 120px;
+        height: 50px;
+    }
+    .btn p{
+        font-size: 10px;
+
+    }
+    .card{
+        margin: 10px;
+    }
+    .card img{
+        width: 100px;
+        border-radius: 5px;
+    }
+    
+    .card h4{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .card p{
+        font-size: 7px;
+        font-weight: 400;
+        color: grey;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .links a{
+        font-size: 22px;
+        margin: 5px;
+    }
+
+    .main-img img{
+        height: auto;
+        border-radius: 10px;
+        width: 800px;
+    }
+    .main-title{
+        font-size: 2rem;
+    }
+    .hero-title3{
+        font-size: .7rem;
+    }
+  
+
+    .content-items img{
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+    }
+    .content-text{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .set1 img{
+        width: 400px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    .cs1 li{
+        font-size: 15px;
+    }
+    .wio{
+        font-size: 1rem;
+    }
+    .cs2 p{
+        font-size: 15px;
+    }
+    .trusted-by-logos img{
+        width: 150px;
+    }
+    .footer h1{
+        font-size: 12px;
+    }
+    .button-2{
+        width: 120px;
+        height: 50px;
+    }
+    .btn p{
+        font-size: 10px;
+
+    }
+    .card{
+        margin: 10px;
+    }
+    .card img{
+        width: 250px;
+        border-radius: 10px;
+    }
+    
+    .card h4{
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .card p{
+        font-size: 22px;
+        font-weight: 400;
+        color: grey;
+    }
+}
