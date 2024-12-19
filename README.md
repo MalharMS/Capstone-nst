@@ -34,17 +34,6 @@ Futura is a sleek, professionally designed website that represents a designer's 
 - 10+ Years of Experience
 - 5 Industry Awards
 
-## Trusted By
-
-Major brands including:
-- Amazon
-- Facebook
-- Twitter
-- Adobe
-- Apple
-- Tesla
-- SpaceX
-and more.
 
 ## Technical Details
 
@@ -53,11 +42,3 @@ and more.
 - Responsive design for all devices
 - Modern grid layout system
 - Optimized image assets
-
-## Contact
-
-A contact button is available in the footer section for business inquiries.
-
-## Copyright
-
-© 2023 Futura - All rights reserved
