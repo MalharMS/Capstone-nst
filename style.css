@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Chivo", serif;
+    /* overflow-x: hidden; */
 
 
 }
@@ -357,30 +358,35 @@ a:hover{
         color: grey;
     }
     .content-items img{
-        width: 120px;
-        height: 170px;
+        width: 100px;
+        height: 150px;
         margin: 10px;
+    }
+    .content-box{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
     }
     .content-text{
         padding: 10px;
         font-size: 10px;
     }
     .set1 img{
-        width: 200px;
-        border-radius: 20px;
-        margin: 10px;
+        width: 150px;
+        border-radius: 5px;
+        margin: 3px;
     }
     .cs1 li{
-        font-size: 14px;
+        font-size: 10px;
     }
     .wio{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     .cs2 p{
         font-size: 10px;
     }
     .trusted-by-logos img{
-        width: 80px;
+        width: 50px;
     }
     .footer h1{
         font-size: 12px;
@@ -412,78 +418,3 @@ a:hover{
     }
 }
 
-@media (max-width: 1024px) {
-
-    .links a{
-        font-size: 22px;
-        margin: 5px;
-    }
-
-    .main-img img{
-        height: auto;
-        border-radius: 10px;
-        width: 800px;
-    }
-    .main-title{
-        font-size: 2rem;
-    }
-    .hero-title3{
-        font-size: .7rem;
-    }
-  
-
-    .content-items img{
-        width: 350px;
-        height: 350px;
-        margin: 10px;
-    }
-    .content-text{
-        padding: 10px;
-        font-size: 10px;
-    }
-    .set1 img{
-        width: 400px;
-        border-radius: 20px;
-        margin: 10px;
-    }
-    .cs1 li{
-        font-size: 15px;
-    }
-    .wio{
-        font-size: 1rem;
-    }
-    .cs2 p{
-        font-size: 15px;
-    }
-    .trusted-by-logos img{
-        width: 150px;
-    }
-    .footer h1{
-        font-size: 12px;
-    }
-    .button-2{
-        width: 120px;
-        height: 50px;
-    }
-    .btn p{
-        font-size: 10px;
-
-    }
-    .card{
-        margin: 10px;
-    }
-    .card img{
-        width: 250px;
-        border-radius: 10px;
-    }
-    
-    .card h4{
-        font-size: 20px;
-        font-weight: normal;
-    }
-    .card p{
-        font-size: 22px;
-        font-weight: 400;
-        color: grey;
-    }
-}
